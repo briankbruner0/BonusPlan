@@ -1,0 +1,106 @@
+body {
+		background-color: #f1efe8;
+	}
+
+.tab-pane {
+	padding: 15px;
+}
+
+.emphasis {
+	font-size: 24px;
+	color: #000000;
+	font-weight: normal;
+}
+/*Styling for Bonus Plan Bonus Message*/
+.bonusMessage {
+	padding: 10px;
+}
+
+.modalResidentHeading {
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	font-size: 18px;
+}
+/*Styling for table footers*/
+.table > tfoot > tr > td {
+	border-top: 1px solid #333;
+}
+
+.modalFooter {
+	text-align: right;
+}
+
+/*Styling to allow footer styles to show*/
+.table > tbody > tr:last-child > td {
+	border-bottom: none;
+}
+
+/*Styling for Cluster Communities on Cluster Menu Bar*/
+.communityCluster {
+	font-size: 16px;
+}
+/*Styling for dot separator on cluster menu bar*/
+.separator {
+	padding-right: 3px;
+	padding-left: 3px;
+}
+/*Styling for current community on cluster nav*/
+.navCurrentCommunity {
+	font-weight: bold;
+}
+/*Styling Form Date Picker - default styles*/
+.nav > li > a.bonusPlanDatePicker {
+	font-size: 16px;
+	padding: 0px;
+	color: #777;
+}
+/*Styling Form Date Picker - removes gray background color on hover of drop down menu list*/
+.nav > li > a:hover.bonusPlanDatePicker {
+	background-color: inherit;
+}
+/*Styling Form Date Picker - removes gray background color drop down list is open*/
+.nav > li > a:focus.bonusPlanDatePicker {
+	background-color: inherit;
+}
+/*Styling Form Date Picker - removes background color change on click of drop down item*/
+.nav > li > a.bonusPlanDatePicker {
+	background-color: inherit;
+}
+/*Styling Form Date Picker - adds padding to caret*/
+.bonusPlanDatePicker > .caret {
+	margin-right: 10px;
+}
+
+.roomBadge-AL {
+	margin-right: 5px;
+	background-color: #dbc554;
+}
+
+.roomBadge-LG {
+	margin-right: 5px;
+	background-color: #693065;
+}
+
+.roomBadge-IL {
+	margin-right: 5px;
+	background-color: #eee;
+}
+
+/*footer disclaimer for Processed Bonuses*/
+.disclaimer {
+	border-top: 1px solid white;
+	font-size: 10px;
+	font-style: italic;
+}
+
+#ApprovalExceptionNote {
+	margin-bottom: 5px;
+}
+
+#BonusMessagePercentage {
+	padding-left:10px;
+	font-size: 14px;
+	margin-top: 7px;
+	font-style: italic;
+}      
+		

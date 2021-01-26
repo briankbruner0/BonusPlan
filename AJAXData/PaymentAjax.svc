@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BonusPlan.PaymentAjax" CodeBehind="PaymentAjax.svc.cs" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>

@@ -1,0 +1,78 @@
+﻿<!--*******************************************************************
+ ATRIA SENIOR LIVING GROUP CONFIDENTIAL.  For authorized use only.
+ Except for as expressly authorized by Atria Senior Living,
+ do not disclose, copy, reproduce, distribute, or modify.
+ TM 2011 Atria Senior Living, LLC
+*********************************************************************
+PURPOSE:		Informational footer that navigates to documents that the user would like training on
+AUTHOR:			Denny Joy
+DATE:			05/25/2016
+NOTES:		    This file will be utilized in the footer of html docs by using the line: <!- - #include file="include/hdrMain.html"- -> (Remove space between dashes).
+CHANGE CONTROL: 10/20/2016  Rob Azinger
+                            Existing markup was causing an overflow on small devices.
+                            Adjust padding and removed some misplaced div rows.
+*******************************************************************-->
+
+<style>
+    .footer a:link, .footer a:visited, .footer a:active, .footer a:hover {
+        color: #A69F88;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        color: #A69F88;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .footer a {
+        color: #A69F88;
+        text-decoration: none;
+        background-color: transparent;
+        font: lato;
+        font-size: 12px;
+    }
+
+    .footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer li {
+        margin: 0px 0px 6px 0px;
+    }
+</style>
+
+<div class="footer no-print" style="background-color:#4f4f4f;margin-top:48px;">
+    <div class="container" style="background-color:#4f4f4f;">
+        <div class="row">
+            <div class="col-lg-9" style="padding: 15px 0px 15px 0px;" id="7">
+                <div class="col-lg-12">
+                    <h4 style="color: #D9C756; ">How do I...</h4>
+                </div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li><a href='../../../library/Portal/SelfHelp/MoveInBonusPlanTrainingGuide.pdf' target='_blank'>Move In Bonus Plan Training Guide</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-6">
+                    <ul>
+                        <li><a href='../../../library/Content/Intranet/Publish/007423_011792.pdf' target='_blank'>View Pending Payments</a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="col-lg-3" style="padding: 15px 0px 15px 0px;">
+                <div class="col-lg-12">
+                    <h4 style="color: #D9C756; ">I want to know more about...</h4>
+                </div>
+                <div class="col-lg-12">
+                    <ul>
+						<li><a href='../../../library/Portal/SelfHelp/CSDPlanFinal.pdf' target='_blank'>CSD Bonus Plan</a></li>
+						<li><a href='../../../library/Portal/SelfHelp/MoveInBonusFAQ.pdf' target='_blank'>Move In Bonus Plan FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

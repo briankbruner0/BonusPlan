@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94CD9785-4C53-45EA-8463-8941601A09BA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BonusPlan</RootNamespace>
+    <AssemblyName>BonusPlan</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Atria.Framework">
+      <HintPath>..\..\bin\Atria.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Atria.MenuBar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Atria.MenuBar.dll</HintPath>
+    </Reference>
+    <Reference Include="AtriaBase.Utility">
+      <HintPath>..\..\bin\AtriaBase.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="AtriaEM">
+      <HintPath>..\..\bin\AtriaEM.dll</HintPath>
+    </Reference>
+    <Reference Include="AtriaSecurity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AtriaSecurity\bin\AtriaSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPayment.aspx.cs">
+      <DependentUpon>AddPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPayment.aspx.designer.cs">
+      <DependentUpon>AddPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrationDashboard.aspx.cs">
+      <DependentUpon>AdministrationDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministrationDashboard.aspx.designer.cs">
+      <DependentUpon>AdministrationDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAXData\Approval.aspx.cs">
+      <DependentUpon>Approval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AJAXData\Approval.aspx.designer.cs">
+      <DependentUpon>Approval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAXData\BonusPlanAJAX.svc.cs">
+      <DependentUpon>BonusPlanAJAX.svc</DependentUpon>
+    </Compile>
+    <Compile Include="AJAXData\CommunityModalAJAX.aspx.cs">
+      <DependentUpon>CommunityModalAJAX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AJAXData\CommunityModalAJAX.aspx.designer.cs">
+      <DependentUpon>CommunityModalAJAX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAXData\IncentivizerAJAX.svc.cs">
+      <DependentUpon>IncentivizerAJAX.svc</DependentUpon>
+    </Compile>
+    <Compile Include="AJAXData\PaymentAjax.svc.cs">
+      <DependentUpon>PaymentAjax.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalAdministration.aspx.cs">
+      <DependentUpon>ApprovalAdministration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApprovalAdministration.aspx.designer.cs">
+      <DependentUpon>ApprovalAdministration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BonusPlanClusterDashboard.aspx.cs">
+      <DependentUpon>BonusPlanClusterDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BonusPlanClusterDashboard.aspx.designer.cs">
+      <DependentUpon>BonusPlanClusterDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BonusPlanClusterDashboardEmulate.aspx.cs">
+      <DependentUpon>BonusPlanClusterDashboardEmulate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BonusPlanClusterDashboardEmulate.aspx.designer.cs">
+      <DependentUpon>BonusPlanClusterDashboardEmulate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BonusPlanConfiguration.aspx.cs">
+      <DependentUpon>BonusPlanConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BonusPlanConfiguration.aspx.designer.cs">
+      <DependentUpon>BonusPlanConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BonusPlanEDDashboard.aspx.cs">
+      <DependentUpon>BonusPlanEDDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BonusPlanEDDashboard.aspx.designer.cs">
+      <DependentUpon>BonusPlanEDDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PaymentData.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BonusPlanDashboardEmulate.aspx.cs">
+      <DependentUpon>BonusPlanDashboardEmulate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BonusPlanDashboardEmulate.aspx.designer.cs">
+      <DependentUpon>BonusPlanDashboardEmulate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BonusPlanProfile.aspx.cs">
+      <DependentUpon>BonusPlanProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BonusPlanProfile.aspx.designer.cs">
+      <DependentUpon>BonusPlanProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObject\AdministrationDashboardBO.cs" />
+    <Compile Include="BusinessObject\ApprovalManagementBO.cs" />
+    <Compile Include="BusinessObject\BonusPlanBO.cs" />
+    <Compile Include="BusinessObject\CommunityBO.cs" />
+    <Compile Include="BusinessObject\DashboardBO.cs" />
+    <Compile Include="BusinessObject\MenuBarBO.cs" />
+    <Compile Include="BusinessObject\MoveInRevenueBO.cs" />
+    <Compile Include="BusinessObject\MoveInRevenueStatusBO.cs" />
+    <Compile Include="BusinessObject\NoteTypeBO.cs" />
+    <Compile Include="BusinessObject\PaymentBO.cs" />
+    <Compile Include="BusinessObject\PaymentScheduleBO.cs" />
+    <Compile Include="BusinessObject\PaymentStatusBO.cs" />
+    <Compile Include="BusinessObject\RevenueEntryTypeBO.cs" />
+    <Compile Include="BusinessObject\SecurityBO.cs" />
+    <Compile Include="BusinessObject\SecurityOverrideBO.cs" />
+    <Compile Include="DataTransferObject\AdministrationDashboardDTO.cs" />
+    <Compile Include="DataTransferObject\ApprovalManagementDTO.cs" />
+    <Compile Include="DataTransferObject\BonusPlanDTO.cs" />
+    <Compile Include="DataTransferObject\CommunityDTO.cs" />
+    <Compile Include="DataTransferObject\DashboardDTO.cs" />
+    <Compile Include="DataTransferObject\MoveInRevenueDTO.cs" />
+    <Compile Include="DataTransferObject\MoveInRevenueStatusDTO.cs" />
+    <Compile Include="DataTransferObject\NoteTypeDTO.cs" />
+    <Compile Include="DataTransferObject\PaymentDTO.cs" />
+    <Compile Include="DataTransferObject\PaymentScheduleDTO.cs" />
+    <Compile Include="DataTransferObject\PaymentStatusDTO.cs" />
+    <Compile Include="DataTransferObject\RevenueEntryTypeDTO.cs" />
+    <Compile Include="Model\PaymentModel.cs" />
+    <Compile Include="MoveInRevenueProfile.aspx.cs">
+      <DependentUpon>MoveInRevenueProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MoveInRevenueProfile.aspx.designer.cs">
+      <DependentUpon>MoveInRevenueProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MoveInRevenueSearch.aspx.cs">
+      <DependentUpon>MoveInRevenueSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MoveInRevenueSearch.aspx.designer.cs">
+      <DependentUpon>MoveInRevenueSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MoveInRevenueStatusProfile.aspx.cs">
+      <DependentUpon>MoveInRevenueStatusProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MoveInRevenueStatusProfile.aspx.designer.cs">
+      <DependentUpon>MoveInRevenueStatusProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentInterface.aspx.cs">
+      <DependentUpon>PaymentInterface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentInterface.aspx.designer.cs">
+      <DependentUpon>PaymentInterface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentSchedule.aspx.cs">
+      <DependentUpon>PaymentSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentSchedule.aspx.designer.cs">
+      <DependentUpon>PaymentSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentSearch.aspx.cs">
+      <DependentUpon>PaymentSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentSearch.aspx.designer.cs">
+      <DependentUpon>PaymentSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentStatusProfile.aspx.cs">
+      <DependentUpon>PaymentStatusProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentStatusProfile.aspx.designer.cs">
+      <DependentUpon>PaymentStatusProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollSearch.aspx.cs">
+      <DependentUpon>PayrollSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayrollSearch.aspx.designer.cs">
+      <DependentUpon>PayrollSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollSearchAdministration.aspx.cs">
+      <DependentUpon>PayrollSearchAdministration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayrollSearchAdministration.aspx.designer.cs">
+      <DependentUpon>PayrollSearchAdministration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptBonusCodeQuery.aspx.cs">
+      <DependentUpon>rptBonusCodeQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rptBonusCodeQuery.aspx.designer.cs">
+      <DependentUpon>rptBonusCodeQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptBonusPlanByMoveInDate.aspx.cs">
+      <DependentUpon>rptBonusPlanByMoveInDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rptBonusPlanByMoveInDate.aspx.designer.cs">
+      <DependentUpon>rptBonusPlanByMoveInDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptBonusPlanRevenue.aspx.cs">
+      <DependentUpon>rptBonusPlanRevenue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rptBonusPlanRevenue.aspx.designer.cs">
+      <DependentUpon>rptBonusPlanRevenue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rptCanadaBonusExtract.aspx.cs">
+      <DependentUpon>rptCanadaBonusExtract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\rptCanadaBonusExtract.aspx.designer.cs">
+      <DependentUpon>rptCanadaBonusExtract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RevenueEntryTypeProfile.aspx.cs">
+      <DependentUpon>RevenueEntryTypeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RevenueEntryTypeProfile.aspx.designer.cs">
+      <DependentUpon>RevenueEntryTypeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptRSMBonusPlanExtract.aspx.cs">
+      <DependentUpon>rptRSMBonusPlanExtract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rptRSMBonusPlanExtract.aspx.designer.cs">
+      <DependentUpon>rptRSMBonusPlanExtract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingandDocumentation.aspx.cs">
+      <DependentUpon>TrainingandDocumentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingandDocumentation.aspx.designer.cs">
+      <DependentUpon>TrainingandDocumentation.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddPayment.aspx" />
+    <Content Include="AdministrationDashboard.aspx" />
+    <Content Include="AJAXData\Approval.aspx" />
+    <Content Include="AJAXData\BonusPlanAJAX.svc" />
+    <Content Include="AJAXData\CommunityModalAJAX.aspx" />
+    <Content Include="AJAXData\IncentivizerAJAX.svc" />
+    <Content Include="AJAXData\PaymentAjax.svc" />
+    <Content Include="ApprovalAdministration.aspx" />
+    <Content Include="BonusPlanClusterDashboard.aspx" />
+    <Content Include="BonusPlanClusterDashboardEmulate.aspx" />
+    <Content Include="BonusPlanConfiguration.aspx" />
+    <Content Include="BonusPlanEDDashboard.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="BonusPlanDashboardEmulate.aspx" />
+    <Content Include="BonusPlanProfile.aspx" />
+    <Content Include="MoveInRevenueProfile.aspx" />
+    <Content Include="MoveInRevenueSearch.aspx" />
+    <Content Include="MoveInRevenueStatusProfile.aspx" />
+    <Content Include="PaymentInterface.aspx" />
+    <Content Include="PaymentSchedule.aspx" />
+    <Content Include="PaymentSearch.aspx" />
+    <Content Include="PaymentStatusProfile.aspx" />
+    <Content Include="PayrollSearch.aspx" />
+    <Content Include="PayrollSearchAdministration.aspx" />
+    <Content Include="Report.aspx" />
+    <Content Include="Report\rptBonusCodeQuery.aspx" />
+    <Content Include="Report\rptBonusPlanByMoveInDate.aspx" />
+    <Content Include="Report\rptBonusPlanRevenue.aspx" />
+    <Content Include="Report\rptCanadaBonusExtract.aspx" />
+    <Content Include="RevenueEntryTypeProfile.aspx" />
+    <Content Include="rptRSMBonusPlanExtract.aspx" />
+    <Content Include="TrainingandDocumentation.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61409</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
